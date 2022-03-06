@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Please add your name'],
       trim: true,
-      maxLength: [20, 'Your name is up to 20 chars long'],
+      maxLength: [20, 'Your name is up to 20 chars long.'],
     },
     account: {
       type: String,
@@ -17,7 +17,6 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: [true, 'Please add your password'],
-      trim: true,
     },
     avatar: {
       type: String,
